@@ -20,13 +20,7 @@ const merge = (arr1, arr2) => {
     }
   }
 
-  if (i < arr1.length) {
-    result = result.concat(arr1.slice(i));
-  } else {
-    result = result.concat(arr2.slice(j));
-  }
-
-  return result;
+  return result.concat(arr1.slice(i), arr2.slice(j));
 };
 
 const mergeSort = (nums) => {
