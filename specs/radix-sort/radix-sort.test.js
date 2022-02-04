@@ -10,18 +10,7 @@
 */
 
 const makeBuckets = () => {
-  const buckets = [
-    [], // 0s
-    [], // 1s
-    [], // 2s
-    [], // 3s
-    [], // 4s
-    [], // 5s
-    [], // 6s
-    [], // 7s
-    [], // 8s
-    [], // 9s
-  ];
+  const buckets = new Array(10).fill().map(() => []);
 
   const putInABucket = (num, indexFromEnd) => {
     const numString = num.toString();
